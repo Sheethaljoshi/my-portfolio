@@ -1,3 +1,29 @@
+import Header from '@/components/header';
+import Hero from '@/components/sections/hero';
+import Experience from '@/components/sections/experience';
+import Projects from '@/components/sections/projects';
+import Skills from '@/components/sections/skills';
+import Achievements from '@/components/sections/achievements';
+import Education from '@/components/sections/education';
+import AdaptivePortfolio from '@/components/sections/adaptive-portfolio';
+import Contact from '@/components/sections/contact';
+import Footer from '@/components/footer';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Achievements />
+        <Education />
+        <AdaptivePortfolio />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
