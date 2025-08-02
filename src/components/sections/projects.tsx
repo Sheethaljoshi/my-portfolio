@@ -2,41 +2,44 @@ import Image from 'next/image';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github, ListTree } from 'lucide-react';
 import { Container } from '../container';
 
 const projects = [
   {
     title: 'AI Diagnostic Assistant',
-    description:
-      "Built an AI-powered assistant combining OpenAI's Realtime API, Hume.ai (for sentiment/emotion analysis), and GPT-4, enabling users to describe symptoms conversationally while receiving emotionally adaptive responses. Selected as a semi-finalist at MIT’s flagship global hackathon.",
+    description: [
+      "Built an AI-powered assistant with OpenAI's Realtime API, Hume.ai, and GPT-4 for emotionally adaptive conversational responses.",
+      "Selected as a semi-finalist at MIT’s flagship global hackathon.",
+    ],
     image: 'https://placehold.co/600x400.png',
     image_hint: 'medical technology',
-    liveUrl: '#',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
   {
     title: 'AI Study Buddy',
-    description:
-      'Developed an AI tool that converts user-provided content into dynamic study aids—flashcards, concept maps, quizzes—by detecting cognitive preferences through behavioral analytics and NLP profiling. Ranked Top 5 at Kerala’s largest GenAI hackathon (TinkHack 2.0, 2025) for innovation and usability.',
+    description: [
+      'Developed an AI tool that converts user content into dynamic study aids like flashcards and quizzes.',
+      'Utilized behavioral analytics and NLP to detect cognitive preferences for personalized learning.',
+      'Ranked Top 5 at Kerala’s largest GenAI hackathon for innovation.',
+    ],
     image: 'https://placehold.co/600x400.png',
     image_hint: 'education technology',
-    liveUrl: '#',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
   {
     title: 'Rover Waypoint Controller',
-    description:
-      'Designed a real-time autonomous navigation system using graph search and AI-based terrain classification. Contributed to Horizon Mars Rover Team World Rank 18, All India Rank 2 at ERC 2024.',
+    description: [
+      'Designed a real-time autonomous navigation system using graph search and AI-based terrain classification.',
+      'Contributed to Horizon Mars Rover Team achieving World Rank 18 at ERC 2024.',
+    ],
     image: 'https://placehold.co/600x400.png',
     image_hint: 'abstract code',
-    liveUrl: '#',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
 ];
@@ -65,21 +68,23 @@ export default function Projects() {
             </CardHeader>
             <div className="p-6 flex flex-col flex-grow">
               <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
-              <CardDescription className="mt-2 flex-grow">{project.description}</CardDescription>
+              <CardContent className="p-0 pt-4 flex-grow">
+                <ul className="space-y-2">
+                  {project.description.map((point) => (
+                    <li key={point} className="flex items-start gap-3">
+                      <ListTree className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                      <span className="text-muted-foreground">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
             </div>
-            <CardFooter className="mt-auto">
-              <div className="flex w-full gap-4">
-                <Button asChild className="flex-1">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                  </a>
-                </Button>
-                <Button asChild variant="secondary" className="flex-1">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" /> GitHub
-                  </a>
-                </Button>
-              </div>
+            <CardFooter className="mt-auto p-6">
+              <Button asChild className="w-full">
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" /> View on GitHub
+                </a>
+              </Button>
             </CardFooter>
           </Card>
         ))}

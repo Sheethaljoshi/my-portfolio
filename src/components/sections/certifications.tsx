@@ -1,4 +1,4 @@
-import { Award } from 'lucide-react';
+import { Award, ArrowUpRight } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Container } from '../container';
 
@@ -28,13 +28,14 @@ export default function Certifications() {
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2">
         {certifications.map((item, index) => (
-          <a href={item.url} target="_blank" rel="noopener noreferrer" key={item.title} className="block h-full">
+          <a href={item.url} target="_blank" rel="noopener noreferrer" key={item.title} className="block h-full group">
             <Card className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary fade-in-up h-full" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
               <div className="flex-shrink-0">{item.icon}</div>
-              <div>
+              <div className="flex-grow">
                 <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
                 <CardDescription className="mt-1">{item.description}</CardDescription>
               </div>
+              <ArrowUpRight className="h-6 w-6 text-muted-foreground transition-transform duration-300 group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Card>
           </a>
         ))}
