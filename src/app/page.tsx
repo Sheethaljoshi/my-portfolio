@@ -7,7 +7,6 @@ import Projects from '@/components/sections/projects';
 import Skills from '@/components/sections/skills';
 import Achievements from '@/components/sections/achievements';
 import Education from '@/components/sections/education';
-import AdaptivePortfolio from '@/components/sections/adaptive-portfolio';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
 import Certifications from '@/components/sections/certifications';
@@ -46,7 +45,6 @@ export default function Home() {
         <Achievements />
         <Certifications />
         <Education />
-        <AdaptivePortfolio />
         <Contact />
       </main>
       <Footer />
