@@ -1,4 +1,4 @@
-import { Briefcase } from 'lucide-react';
+import { Briefcase, ListTree } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Container } from '../container';
 
@@ -7,13 +7,19 @@ const experiences = [
     role: 'Software Developer Intern',
     company: 'KDex Global (On-site)',
     period: 'May 2025 - July 2025',
-    description: 'Built and maintained key backend APIs in Golang, optimized PostgreSQL queries, and streamlined data processing pipelines to support new product features and improve backend throughput. Led the build and static hosting of product documentation using React, Docusaurus, AWS S3, and CloudFront, enabling fast and scalable self-serve support.',
+    description: [
+      'Built and maintained key backend APIs in Golang, optimized PostgreSQL queries, and streamlined data processing pipelines.',
+      'Led the build and static hosting of product documentation using React, Docusaurus, AWS S3, and CloudFront.'
+    ],
   },
   {
     role: 'Software Developer Intern',
     company: 'Global Health Opinion (Remote)',
     period: 'March 2025 - May 2025',
-    description: 'Built scalable, interactive medical dashboards for healthcare professionals in Next.js using TypeScript, and integrated backend services via C# and REST APIs, enabling real-time insights for healthcare operations. Worked in a unified monorepo, streamlining development and data load speeds by 20% via API optimization and frontend rendering improvements; ensured feature robustness through automated tests and performance profiling.',
+    description: [
+      'Built scalable, interactive medical dashboards in Next.js with TypeScript and C# REST APIs.',
+      'Improved data load speeds by 20% through API optimization and frontend rendering improvements.'
+    ],
   },
 ];
 
@@ -38,9 +44,9 @@ export default function Experience() {
             style={{ animationDelay: `${200 * (index + 2)}ms`}}
           >
             <div className="hidden md:block md:w-5/12"></div>
-            <div className="z-10 flex h-12 w-12 items-center justify-center">
-              <div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg">
-                <Briefcase className="h-6 w-6" />
+            <div className="z-10 flex h-16 w-16 items-center justify-center">
+              <div className="grid h-16 w-16 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg">
+                <Briefcase className="h-8 w-8" />
               </div>
             </div>
             <div className="w-full md:w-5/12">
@@ -53,7 +59,14 @@ export default function Experience() {
                    <p className="text-md text-muted-foreground pt-1">{exp.period}</p>
                 </CardHeader>
                 <CardContent className="p-8 pt-0">
-                  <p className="text-muted-foreground text-base leading-relaxed">{exp.description}</p>
+                  <ul className="space-y-3">
+                    {exp.description.map((point) => (
+                      <li key={point} className="flex items-start gap-3">
+                        <ListTree className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                        <span className="text-muted-foreground">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             </div>
