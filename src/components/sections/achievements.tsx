@@ -5,23 +5,23 @@ import { Container } from '../container';
 const achievements = [
   {
     icon: <Trophy className="h-8 w-8 text-primary" />,
-    title: 'AI Innovation Award 2023',
-    description: 'Awarded for the development of the AI Diagnostic Assistant, recognizing its impact on healthcare technology.',
-  },
-  {
-    icon: <Mic className="h-8 w-8 text-primary" />,
-    title: 'Keynote Speaker at TechConf 2022',
-    description: 'Invited to speak on the future of personalized AI, sharing insights with over 1,000 industry professionals.',
+    title: 'European Rover Challenge 2024',
+    description: 'Achieved World Rank 18, All India Rank 1 as the Lead of Navigation and Communications.',
   },
   {
     icon: <Award className="h-8 w-8 text-primary" />,
-    title: 'Published in "Journal of AI Research"',
-    description: 'Co-authored a paper on novel techniques for emotion detection in text, contributing to the academic community.',
+    title: 'HackMIT 2024 Semi-Finalist',
+    description: 'Recognized as a semi-finalist in the world-famous hackathon at the Massachusetts Institute of Technology, USA.',
   },
   {
     icon: <Users className="h-8 w-8 text-primary" />,
-    title: 'Top Contributor - Open Source',
-    description: 'Recognized as a top contributor to a popular open-source machine learning library for consistent and high-quality contributions.',
+    title: 'Top 5 at TinkHack 2.0',
+    description: "Secured a top 5 position in Kerala's Largest Gen AI Hackathon.",
+  },
+  {
+    icon: <Mic className="h-8 w-8 text-primary" />,
+    title: 'IBM Full Stack Developer Certified',
+    description: 'Completed the IBM Full Stack Developer Professional Certification.',
   },
 ];
 

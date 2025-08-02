@@ -13,30 +13,61 @@ export interface ActionState {
 
 // Dummy portfolio content. In a real app, this would be fetched from a CMS or a file.
 const portfolioContent = `
-# Sheethal - AI & Software Engineer
+# Sheethal Joshi Thomas - Software Developer
 
-## About Me
-A passionate and driven AI engineer with a knack for creating intelligent and user-friendly applications. I thrive in collaborative environments and enjoy tackling complex challenges.
+Kochi, Kerala, India | Ph: +91 8921773573 | sh33thal24@gmail.com
 
-## Experience
-- **AI Engineer at TechCorp (2022-Present):** Developed and deployed machine learning models for various products, including a flagship AI diagnostic tool that improved accuracy by 15%. Specialized in computer vision and deep learning.
-- **Machine Learning Researcher at Innovate AI Labs (2021-2022):** Contributed to research on natural language understanding. Published a paper on emotion detection in text at a top-tier AI conference.
-- **Software Developer Intern at Innovate LLC (Summer 2021):** Worked on the frontend of a major web application using React and TypeScript, contributing to a 20% improvement in load times.
+## WORK AUTHORIZATION
+US CITIZEN
 
-## Projects
-- **AI Diagnostic Assistant:** A tool that assists doctors in diagnosing diseases using medical imaging (X-rays, MRIs). Built with TensorFlow and deployed on GCP.
-- **AI Study Buddy:** A personalized learning assistant for students that generates quizzes and summaries from lecture notes. Uses NLP models for text processing.
-- **Portfolio Orchestrator:** This dynamic website, built with Next.js and GenAI.
+## EDUCATION
+**Cochin University of Science and Technology, School of Engineering** - Kerala, India
+*Bachelor of Technology (B.Tech) - Computer Science and Engineering*
 
-## Skills
-- **Programming Languages:** Python, TypeScript, JavaScript, Java, SQL
-- **AI/ML Frameworks:** TensorFlow, PyTorch, Scikit-learn, Keras, Hugging Face
-- **Web Development:** React, Next.js, Node.js, Express, Tailwind CSS
-- **Cloud & DevOps:** Google Cloud Platform (GCP), AWS, Docker, Kubernetes, CI/CD
+## EXPERIENCE
+**Software Developer Intern | KDex Global (On-site)**
+*Durham, North Carolina - USA (May 2025 - July 2025)*
+- Built and maintained key backend APIs in Golang, optimized PostgreSQL queries, and streamlined data processing pipelines to support new product features and improve backend throughput.
+- Led the build and static hosting of product documentation using React, Docusaurus, AWS S3, and CloudFront, enabling fast and scalable self-serve support.
 
-## Education
-- **Master of Science in Computer Science** - AI Specialization, Stanford University
-- **Bachelor of Science in Software Engineering** - University of California, Berkeley
+**Software Developer Intern | Global Health Opinion (Remote)**
+*Kochi, Kerala - India (March 2025 - May 2025)*
+- Built scalable, interactive medical dashboards for healthcare professionals in Next.js using TypeScript, and integrated backend services via C# and REST APIs, enabling real-time insights for healthcare operations.
+- Worked in a unified monorepo, streamlining development and data load speeds by 20% via API optimization and frontend rendering improvements; ensured feature robustness through automated tests and performance profiling.
+
+## ACHIEVEMENTS
+- Achieved World Rank 18, All India Rank 1 at the European Rover Challenge 2024 held at Krakow, Poland as the Lead of Navigation and Communications
+- Semi-Finalist in the world famous hackathon- HackMIT, 2024 at the Massachusetts Institute of Technology, USA
+- Secured Top 5 in Kerala’s Largest Gen AI Hackathon, TinkHack 2.0 hosted in Thrikkakara, Kochi
+
+## CERTIFICATION
+- IBM Full Stack Developer Professional Certiﬁcation
+- ERC Space and Robotics Industry Standard Programme Certiﬁcation issued by European Space Foundation
+
+## SKILLS
+- **Languages:** English, Malayalam, Hindi
+- **Technical Skills:** Python, C++, C#, Java, TypeScript, JavaScript, React.js, Next.js, FastAPI, Node.js, Express.js, Selenium, Go, Firebase, MySQL, PostgreSQL, MongoDB Atlas, RESTful APIs, Docusaurus, AWS, Docker, TensorFlow, Keras, Scikit-learn, OpenCV, Git (Version Control), LLMs, Deep Learning
+
+## PERSONAL PROJECTS
+### AI DIAGNOSTIC ASSISTANT
+- Built an AI-powered assistant combining OpenAI's Realtime API, Hume.ai (for sentiment/emotion analysis), and GPT-4, enabling users to describe symptoms conversationally while receiving emotionally adaptive responses.
+- Designed a responsive user interface using React.js with TypeScript, and implemented backend services and routing via FastAPI, integrating structured triage logic and medical prompt chaining.
+- Selected as a semi-finalist at MIT’s flagship global hackathon
+
+### AI STUDY BUDDY
+- Developed an AI tool that converts user-provided content into dynamic study aids—flashcards, concept maps, quizzes—by detecting cognitive preferences through behavioral analytics and NLP profiling.
+- Enabled real-time, low-latency voice interaction using Whisper, DALL·E for custom visuals, and GPT-4 for personalized quiz generation and summarization.
+- Ranked Top 5 at Kerala’s largest GenAI hackathon (TinkHack 2.0, 2025) for innovation and usability.
+
+### ROVER WAYPOINT CONTROLLER
+- Designed a real-time autonomous navigation system using graph search and AI-based terrain classification.
+- Integrated with real-time communication using WebSockets over TCP/IP for monitoring and updates, and utilized WebRTC for video transmission in field deployments.
+- Contributed to Horizon Mars Rover Team World Rank 18, All India Rank 2 at ERC 2024.
+
+## REFERENCES
+- **Certiﬁcates:** https://drive.google.com/drive/folders/1xWROUPyNRbVLBAtv7RooqaX7qpA6kpdC?usp=sharing
+- **Github:** https://github.com/Sheethaljoshi
+- **LinkedIn:** https://www.linkedin.com/in/Sheethaljoshi
 `;
 
 export async function handleAdaptPortfolio(

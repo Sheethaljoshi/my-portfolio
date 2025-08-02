@@ -11,17 +11,17 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Sheethaljoshi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5 transition-transform hover:scale-110" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/Sheethaljoshi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5 transition-transform hover:scale-110" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:example@example.com" aria-label="Email">
+              <a href="mailto:sh33thal24@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5 transition-transform hover:scale-110" />
               </a>
             </Button>

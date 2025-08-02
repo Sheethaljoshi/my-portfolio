@@ -15,6 +15,9 @@ export default function Contact() {
       <p className="mt-4 text-center text-muted-foreground md:text-lg">
         Have a project, a question, or just want to say hi? My inbox is always open.
       </p>
+       <p className="mt-4 text-center text-muted-foreground md:text-lg">
+       Kochi, Kerala, India | Ph: +91 8921773573 | sh33thal24@gmail.com
+      </p>
       <Card className="max-w-2xl mx-auto mt-12 shadow-lg">
         <CardContent className="p-8">
           <form className="space-y-6">

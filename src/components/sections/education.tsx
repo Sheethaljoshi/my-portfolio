@@ -4,16 +4,10 @@ import { Container } from '../container';
 
 const education = [
   {
-    degree: 'Master of Science in Computer Science',
-    specialization: 'Artificial Intelligence Specialization',
-    university: 'Stanford University',
-    period: '2020 - 2022',
-  },
-  {
-    degree: 'Bachelor of Science in Software Engineering',
-    specialization: 'Minor in Cognitive Science',
-    university: 'University of California, Berkeley',
-    period: '2016 - 2020',
+    degree: 'Bachelor of Technology in Computer Science and Engineering',
+    specialization: 'Cochin University of Science and Technology, School of Engineering',
+    university: 'Kerala, India',
+    period: '',
   },
 ];
 
@@ -26,7 +20,7 @@ export default function Education() {
       <p className="mt-4 text-center text-muted-foreground md:text-lg">
         Foundations of my knowledge and expertise.
       </p>
-      <div className="mt-12 grid gap-8 md:grid-cols-2">
+      <div className="mt-12 grid gap-8 md:grid-cols-1">
         {education.map((edu) => (
           <Card key={edu.degree} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <CardHeader className="items-center">
@@ -35,7 +29,7 @@ export default function Education() {
               </div>
               <CardTitle className="font-headline text-xl">{edu.degree}</CardTitle>
               <p className="text-accent-foreground font-semibold">{edu.specialization}</p>
-              <CardDescription>{edu.university} | {edu.period}</CardDescription>
+              <CardDescription>{edu.university} {edu.period && `| ${edu.period}`}</CardDescription>
             </CardHeader>
           </Card>
         ))}

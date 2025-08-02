@@ -4,22 +4,16 @@ import { Container } from '../container';
 
 const experiences = [
   {
-    role: 'AI Engineer',
-    company: 'TechCorp',
-    period: '2022 - Present',
-    description: 'Lead developer for a suite of AI-powered diagnostic tools. Implemented novel deep learning architectures for medical image analysis, improving diagnostic accuracy by 15%. Deployed models to cloud infrastructure, serving thousands of daily requests.',
-  },
-  {
-    role: 'Machine Learning Researcher',
-    company: 'Innovate AI Labs',
-    period: '2021 - 2022',
-    description: 'Contributed to research on natural language understanding for empathetic chatbots. Published a paper on emotion detection in text at a top-tier AI conference. Collaborated with a team of PhDs to pioneer new techniques.',
+    role: 'Software Developer Intern',
+    company: 'KDex Global (On-site)',
+    period: 'May 2025 - July 2025',
+    description: 'Built and maintained key backend APIs in Golang, optimized PostgreSQL queries, and streamlined data processing pipelines to support new product features and improve backend throughput. Led the build and static hosting of product documentation using React, Docusaurus, AWS S3, and CloudFront, enabling fast and scalable self-serve support.',
   },
   {
     role: 'Software Developer Intern',
-    company: 'Innovate LLC',
-    period: 'Summer 2021',
-    description: 'Developed and maintained frontend features for a high-traffic e-commerce platform using React and TypeScript. Worked in an agile environment, participating in daily stand-ups, sprint planning, and code reviews.',
+    company: 'Global Health Opinion (Remote)',
+    period: 'March 2025 - May 2025',
+    description: 'Built scalable, interactive medical dashboards for healthcare professionals in Next.js using TypeScript, and integrated backend services via C# and REST APIs, enabling real-time insights for healthcare operations. Worked in a unified monorepo, streamlining development and data load speeds by 20% via API optimization and frontend rendering improvements; ensured feature robustness through automated tests and performance profiling.',
   },
 ];
 

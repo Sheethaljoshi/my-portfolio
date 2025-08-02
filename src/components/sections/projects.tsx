@@ -15,29 +15,29 @@ const projects = [
   {
     title: 'AI Diagnostic Assistant',
     description:
-      'A cutting-edge tool that leverages AI to assist medical professionals in diagnosing diseases from medical scans with high accuracy. Features an intuitive interface and real-time analysis.',
+      "Built an AI-powered assistant combining OpenAI's Realtime API, Hume.ai (for sentiment/emotion analysis), and GPT-4, enabling users to describe symptoms conversationally while receiving emotionally adaptive responses. Selected as a semi-finalist at MIT’s flagship global hackathon.",
     image: 'https://placehold.co/600x400.png',
     image_hint: 'medical technology',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Sheethaljoshi',
   },
   {
     title: 'AI Study Buddy',
     description:
-      'A personalized learning companion that adapts to your study habits. It creates custom quizzes, summarizes complex topics, and helps you stay on track to achieve your academic goals.',
+      'Developed an AI tool that converts user-provided content into dynamic study aids—flashcards, concept maps, quizzes—by detecting cognitive preferences through behavioral analytics and NLP profiling. Ranked Top 5 at Kerala’s largest GenAI hackathon (TinkHack 2.0, 2025) for innovation and usability.',
     image: 'https://placehold.co/600x400.png',
     image_hint: 'education technology',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Sheethaljoshi',
   },
   {
-    title: 'Portfolio Orchestrator',
+    title: 'Rover Waypoint Controller',
     description:
-      'The very website you are on. Built with Next.js, Tailwind CSS, and GenAI to create a dynamic, adaptive, and engaging portfolio experience that stands out.',
+      'Designed a real-time autonomous navigation system using graph search and AI-based terrain classification. Contributed to Horizon Mars Rover Team World Rank 18, All India Rank 2 at ERC 2024.',
     image: 'https://placehold.co/600x400.png',
     image_hint: 'abstract code',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Sheethaljoshi',
   },
 ];
 

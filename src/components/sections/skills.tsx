@@ -6,20 +6,36 @@ import { Container } from '../container';
 
 const technicalSkillsData = [
   { name: 'Python', proficiency: 95 },
-  { name: 'TypeScript', proficiency: 90 },
-  { name: 'AI/ML', proficiency: 92 },
-  { name: 'Next.js', proficiency: 88 },
-  { name: 'Cloud (GCP/AWS)', proficiency: 80 },
-  { name: 'Databases', proficiency: 85 },
+  { name: 'C++', proficiency: 90 },
+  { name: 'C#', proficiency: 85 },
+  { name: 'Java', proficiency: 88 },
+  { name: 'TypeScript', proficiency: 92 },
+  { name: 'JavaScript', proficiency: 90 },
+  { name: 'React.js', proficiency: 95 },
+  { name: 'Next.js', proficiency: 94 },
+  { name: 'FastAPI', proficiency: 85 },
+  { name: 'Node.js', proficiency: 88 },
+  { name: 'Express.js', proficiency: 87 },
+  { name: 'Selenium', proficiency: 80 },
+  { name: 'Go', proficiency: 82 },
 ];
 
 const otherSkills = [
-  'Agile Methodologies',
-  'UI/UX Design Principles',
-  'Problem Solving',
-  'Team Collaboration',
-  'CI/CD',
-  'System Design',
+  'Firebase',
+  'MySQL',
+  'PostgreSQL',
+  'MongoDB Atlas',
+  'RESTful APIs',
+  'Docusaurus',
+  'AWS',
+  'Docker',
+  'TensorFlow',
+  'Keras',
+  'Scikit-learn',
+  'OpenCV',
+  'Git',
+  'LLMs',
+  'Deep Learning',
 ];
 
 export default function Skills() {
@@ -68,7 +84,7 @@ export default function Skills() {
         </Card>
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle className="font-headline">Skills & Competencies</CardTitle>
+            <CardTitle className="font-headline">More Skills & Competencies</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
