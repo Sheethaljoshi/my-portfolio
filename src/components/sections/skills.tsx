@@ -41,7 +41,6 @@ const otherSkills = [
 export default function Skills() {
   return (
     <Container id="skills" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Skillset
       </h2>
@@ -49,7 +48,7 @@ export default function Skills() {
         A blend of technical expertise and creative problem-solving.
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2">
-        <Card className="shadow-lg fade-in-up animation-delay-400">
+        <Card className="shadow-lg fade-in-up animation-delay-400 bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Technical Proficiency</CardTitle>
           </CardHeader>
@@ -85,7 +84,7 @@ export default function Skills() {
             </ResponsiveContainer>
           </CardContent>
         </Card>
-        <Card className="shadow-lg fade-in-up animation-delay-600">
+        <Card className="shadow-lg fade-in-up animation-delay-600 bg-card">
           <CardHeader>
             <CardTitle className="font-headline">More Skills & Competencies</CardTitle>
           </CardHeader>

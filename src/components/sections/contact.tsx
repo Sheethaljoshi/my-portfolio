@@ -9,7 +9,6 @@ import { Button } from '../ui/button';
 export default function Contact() {
   return (
     <Container id="contact" className="relative">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/50 to-background"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Let's Connect
       </h2>
@@ -19,7 +18,7 @@ export default function Contact() {
        <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-400">
        Kochi, Kerala, India | Ph: +91 8921773573 | sh33thal24@gmail.com
       </p>
-      <Card className="max-w-2xl mx-auto mt-12 shadow-lg fade-in-up animation-delay-600">
+      <Card className="max-w-2xl mx-auto mt-12 shadow-lg fade-in-up animation-delay-600 bg-card">
         <CardContent className="p-8">
           <form className="space-y-6">
             <div className="space-y-2">

@@ -44,7 +44,6 @@ const projects = [
 export default function Projects() {
   return (
     <Container id="projects" className="relative">
-       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/20 to-background"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Projects
       </h2>
@@ -53,7 +52,7 @@ export default function Projects() {
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 fade-in-up" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
+          <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 fade-in-up bg-card" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
             <CardHeader className="p-0">
                <Image
                   src={project.image}

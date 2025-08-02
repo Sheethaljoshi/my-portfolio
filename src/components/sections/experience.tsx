@@ -20,7 +20,6 @@ const experiences = [
 export default function Experience() {
   return (
     <Container id="experience" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background to-secondary/20"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Professional Experience
       </h2>
@@ -45,7 +44,7 @@ export default function Experience() {
               </div>
             </div>
             <div className="w-full md:w-5/12">
-              <Card className="shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
+              <Card className="shadow-lg transition-transform hover:scale-105 hover:shadow-xl bg-card">
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">{exp.role}</CardTitle>
                   <CardDescription className="font-semibold text-primary">

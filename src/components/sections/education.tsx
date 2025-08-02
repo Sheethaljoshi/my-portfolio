@@ -14,7 +14,6 @@ const education = [
 export default function Education() {
   return (
     <Container id="education" className="relative overflow-hidden">
-       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background to-secondary/20"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Education
       </h2>
@@ -23,7 +22,7 @@ export default function Education() {
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-1 fade-in-up animation-delay-400">
         {education.map((edu) => (
-          <Card key={edu.degree} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <Card key={edu.degree} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-card">
             <CardHeader className="items-center">
               <div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-primary-foreground mb-4">
                 <GraduationCap className="h-6 w-6" />

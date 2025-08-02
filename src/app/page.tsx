@@ -10,6 +10,7 @@ import Education from '@/components/sections/education';
 import AdaptivePortfolio from '@/components/sections/adaptive-portfolio';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
+import Certifications from '@/components/sections/certifications';
 
 export default function Home() {
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-background via-secondary/20 to-background text-foreground">
       <Header />
       <main className="flex-grow">
         <Hero />
@@ -43,6 +44,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Achievements />
+        <Certifications />
         <Education />
         <AdaptivePortfolio />
         <Contact />

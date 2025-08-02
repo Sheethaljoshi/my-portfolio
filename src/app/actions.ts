@@ -40,7 +40,7 @@ US CITIZEN
 - Semi-Finalist in the world famous hackathon- HackMIT, 2024 at the Massachusetts Institute of Technology, USA
 - Secured Top 5 in Kerala’s Largest Gen AI Hackathon, TinkHack 2.0 hosted in Thrikkakara, Kochi
 
-## CERTIFICATION
+## CERTIFICATIONS
 - IBM Full Stack Developer Professional Certiﬁcation
 - ERC Space and Robotics Industry Standard Programme Certiﬁcation issued by European Space Foundation
 
