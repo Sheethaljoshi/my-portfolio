@@ -27,7 +27,7 @@ const experiences = [
 export default function Experience() {
   return (
     <Container id="experience" className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background opacity-50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/10 via-background to-secondary/10" />
       <div className="container relative">
         <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
           Professional Experience
@@ -48,9 +48,6 @@ export default function Experience() {
             >
               <div className="hidden md:block md:w-5/12" />
               <div className="z-10 flex h-16 w-16 items-center justify-center absolute left-1/2 -translate-x-1/2">
-                <div className="grid h-16 w-16 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg">
-                  <Briefcase className="h-8 w-8" />
-                </div>
               </div>
               <div className="w-full md:w-5/12">
                 <Card className="shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 bg-card border-border/50">
