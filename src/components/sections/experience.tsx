@@ -1,3 +1,4 @@
+'use client';
 import { Briefcase, ListTree } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Container } from '../container';
@@ -26,52 +27,55 @@ const experiences = [
 export default function Experience() {
   return (
     <Container id="experience" className="relative overflow-hidden">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
-        Professional Experience
-      </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
-        My journey through the tech landscape, one challenge at a time.
-      </p>
-      <div className="relative mt-16">
-        <div
-          className="absolute left-1/2 top-4 -ml-[1px] h-[calc(100%-2rem)] w-[2px] bg-border/40 fade-in"
-          aria-hidden="true"
-        />
-        {experiences.map((exp, index) => (
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background opacity-50" />
+      <div className="container relative">
+        <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
+          Professional Experience
+        </h2>
+        <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
+          My journey through the tech landscape, one challenge at a time.
+        </p>
+        <div className="relative mt-16">
           <div
-            key={exp.role + exp.company}
-            className={`relative mb-16 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse fade-in-up`}
-            style={{ animationDelay: `${200 * (index + 2)}ms`}}
-          >
-            <div className="hidden md:block md:w-5/12"></div>
-            <div className="z-10 flex h-16 w-16 items-center justify-center">
-              <div className="grid h-16 w-16 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg">
-                <Briefcase className="h-8 w-8" />
+            className="absolute left-1/2 top-4 -ml-[1px] h-[calc(100%-2rem)] w-[2px] bg-border/40 fade-in"
+            aria-hidden="true"
+          />
+          {experiences.map((exp, index) => (
+            <div
+              key={exp.role + exp.company}
+              className={`relative mb-16 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse fade-in-up`}
+              style={{ animationDelay: `${200 * (index + 2)}ms`}}
+            >
+              <div className="hidden md:block md:w-5/12" />
+              <div className="z-10 flex h-16 w-16 items-center justify-center absolute left-1/2 -translate-x-1/2">
+                <div className="grid h-16 w-16 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg">
+                  <Briefcase className="h-8 w-8" />
+                </div>
+              </div>
+              <div className="w-full md:w-5/12">
+                <Card className="shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 bg-card border-border/50">
+                  <CardHeader className="p-8">
+                    <p className="text-md text-muted-foreground pt-1">{exp.period}</p>
+                    <CardTitle className="font-headline text-3xl mb-2">{exp.role}</CardTitle>
+                    <CardDescription className="font-semibold text-primary text-xl">
+                      {exp.company}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-8 pt-0">
+                    <ul className="space-y-3">
+                      {exp.description.map((point) => (
+                        <li key={point} className="flex items-start gap-3">
+                          <ListTree className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
               </div>
             </div>
-            <div className="w-full md:w-5/12">
-              <Card className="shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 bg-card border-border/50">
-                <CardHeader className="p-8">
-                  <CardTitle className="font-headline text-3xl mb-2">{exp.role}</CardTitle>
-                  <CardDescription className="font-semibold text-primary text-xl">
-                    {exp.company}
-                  </CardDescription>
-                   <p className="text-md text-muted-foreground pt-1">{exp.period}</p>
-                </CardHeader>
-                <CardContent className="p-8 pt-0">
-                  <ul className="space-y-3">
-                    {exp.description.map((point) => (
-                      <li key={point} className="flex items-start gap-3">
-                        <ListTree className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                        <span className="text-muted-foreground">{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </Container>
   );
