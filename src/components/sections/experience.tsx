@@ -27,6 +27,8 @@ const experiences = [
 export default function Experience() {
   return (
     <Container id="experience" className="relative overflow-hidden">
+      <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full border-2 border-dashed border-primary/20 orbit" />
+      <div className="absolute -right-32 -bottom-48 h-96 w-96 rounded-full border-2 border-dashed border-primary/20 orbit-reverse" />
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/10 via-background to-secondary/10" />
       <div className="container relative">
         <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">

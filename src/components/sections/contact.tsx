@@ -8,7 +8,9 @@ import { Button } from '../ui/button';
 
 export default function Contact() {
   return (
-    <Container id="contact" className="relative">
+    <Container id="contact" className="relative overflow-hidden">
+      <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full border-2 border-dashed border-primary/20 orbit" />
+      <div className="absolute -right-32 -bottom-48 h-96 w-96 rounded-full border-2 border-dashed border-primary/20 orbit-reverse" />
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Let's Connect
       </h2>
