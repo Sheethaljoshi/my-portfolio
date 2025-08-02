@@ -43,7 +43,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <Container id="projects">
+    <Container id="projects" className="relative">
+       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/20 to-background"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Projects
       </h2>

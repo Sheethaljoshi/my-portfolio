@@ -20,7 +20,7 @@ const experiences = [
 export default function Experience() {
   return (
     <Container id="experience" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background to-secondary/20"></div>
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Professional Experience
       </h2>
