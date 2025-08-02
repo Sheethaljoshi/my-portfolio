@@ -28,30 +28,31 @@ export default function Experience() {
       </p>
       <div className="relative mt-12">
         <div
-          className="absolute left-1/2 top-0 -ml-[1px] h-full w-[2px] bg-border/40 fade-in"
+          className="absolute left-1/2 top-4 -ml-[1px] h-[calc(100%-2rem)] w-[2px] bg-border/40 fade-in"
           aria-hidden="true"
         />
         {experiences.map((exp, index) => (
           <div
             key={exp.role + exp.company}
-            className={`relative mb-8 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse fade-in-up`}
+            className={`relative mb-12 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse fade-in-up`}
             style={{ animationDelay: `${200 * (index + 2)}ms`}}
           >
             <div className="hidden md:block md:w-5/12"></div>
-            <div className="z-10 flex h-8 w-8 items-center justify-center">
-              <div className="grid h-8 w-8 place-items-center rounded-full bg-primary text-primary-foreground">
-                <Briefcase className="h-4 w-4" />
+            <div className="z-10 flex h-10 w-10 items-center justify-center">
+              <div className="grid h-10 w-10 place-items-center rounded-full bg-primary text-primary-foreground shadow-md">
+                <Briefcase className="h-5 w-5" />
               </div>
             </div>
             <div className="w-full md:w-5/12">
-              <Card className="shadow-lg transition-transform hover:scale-105 hover:shadow-xl bg-card">
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl">{exp.role}</CardTitle>
-                  <CardDescription className="font-semibold text-primary">
-                    {exp.company} | {exp.period}
+              <Card className="shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 bg-card border-border/50">
+                <CardHeader className="p-6">
+                  <CardTitle className="font-headline text-2xl mb-1">{exp.role}</CardTitle>
+                  <CardDescription className="font-semibold text-primary text-base">
+                    {exp.company}
                   </CardDescription>
+                   <p className="text-sm text-muted-foreground">{exp.period}</p>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="p-6 pt-0">
                   <p className="text-muted-foreground">{exp.description}</p>
                 </CardContent>
               </Card>
