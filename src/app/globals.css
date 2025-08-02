@@ -12,15 +12,15 @@ body {
 
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
+    --background: 275 20% 3%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 275 20% 7%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 263.4 95.2% 66.3%;
+    --primary: 275 80% 65%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 275 20% 12%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -28,7 +28,7 @@ body {
     --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 217.2 32.6% 17.5%;
+    --border: 275 20% 15%;
     --input: 217.2 32.6% 17.5%;
     --ring: 263.4 95.2% 66.3%;
     --chart-1: 275 80% 70%;
@@ -40,15 +40,15 @@ body {
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 275 20% 3%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 275 20% 7%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 263.4 95.2% 66.3%;
+    --primary: 275 80% 65%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 275 20% 12%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -56,7 +56,7 @@ body {
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 217.2 32.6% 17.5%;
+    --border: 275 20% 15%;
     --input: 217.2 32.6% 17.5%;
     --ring: 263.4 95.2% 66.3%;
     --chart-1: 275 80% 70%;
@@ -116,6 +116,22 @@ body {
   }
   .animation-delay-600 {
     animation-delay: 600ms;
+  }
+
+  .orbit {
+    animation: orbit 30s linear infinite;
+  }
+  .orbit-reverse {
+    animation: orbit-reverse 20s linear infinite;
+  }
+
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  }
+  @keyframes orbit-reverse {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to { transform: rotate(-360deg) translateX(100px) rotate(360deg); }
   }
 }
 
