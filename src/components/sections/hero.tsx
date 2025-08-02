@@ -39,10 +39,10 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div className="hidden md:flex items-center justify-center relative h-96 w-96">
-            <div className="absolute inset-0.5 rounded-full border-2 border-dashed border-primary/50 orbit" />
-            <div className="absolute inset-8 rounded-full border-2 border-dashed border-primary/30 orbit-reverse" />
-            <div className="relative h-64 w-64">
+          <div className="hidden md:flex items-center justify-center relative h-[28rem] w-[28rem]">
+            <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/50 orbit" />
+            <div className="absolute inset-12 rounded-full border-2 border-dashed border-primary/30 orbit-reverse" />
+            <div className="relative h-80 w-80">
               <Image
                 src="https://placehold.co/400x400.png"
                 alt="Sheethal Joshi Thomas"
