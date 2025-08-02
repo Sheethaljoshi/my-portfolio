@@ -8,17 +8,18 @@ import { Button } from '../ui/button';
 
 export default function Contact() {
   return (
-    <Container id="contact" className="bg-secondary">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary">
+    <Container id="contact" className="bg-secondary/50">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Let's Connect
       </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg">
+      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         Have a project, a question, or just want to say hi? My inbox is always open.
       </p>
-       <p className="mt-4 text-center text-muted-foreground md:text-lg">
+       <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-400">
        Kochi, Kerala, India | Ph: +91 8921773573 | sh33thal24@gmail.com
       </p>
-      <Card className="max-w-2xl mx-auto mt-12 shadow-lg">
+      <Card className="max-w-2xl mx-auto mt-12 shadow-lg fade-in-up animation-delay-600">
         <CardContent className="p-8">
           <form className="space-y-6">
             <div className="space-y-2">

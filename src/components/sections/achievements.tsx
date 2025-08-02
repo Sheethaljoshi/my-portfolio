@@ -28,15 +28,15 @@ const achievements = [
 export default function Achievements() {
   return (
     <Container id="achievements">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary">
+      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Awards & Achievements
       </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg">
+      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         Milestones that mark my dedication and passion for innovation.
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2">
-        {achievements.map((item) => (
-          <Card key={item.title} className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary">
+        {achievements.map((item, index) => (
+          <Card key={item.title} className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary fade-in-up" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
             <div className="flex-shrink-0">{item.icon}</div>
             <div>
               <CardTitle className="font-headline text-lg">{item.title}</CardTitle>

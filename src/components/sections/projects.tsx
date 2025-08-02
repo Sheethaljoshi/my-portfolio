@@ -44,15 +44,15 @@ const projects = [
 export default function Projects() {
   return (
     <Container id="projects">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary">
+      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Projects
       </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg">
+      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         Here are some of the things I've built with passion and code.
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        {projects.map((project, index) => (
+          <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 fade-in-up" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
             <CardHeader className="p-0">
                <Image
                   src={project.image}

@@ -40,15 +40,16 @@ const otherSkills = [
 
 export default function Skills() {
   return (
-    <Container id="skills" className="bg-secondary">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary">
+    <Container id="skills" className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Skillset
       </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg">
+      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         A blend of technical expertise and creative problem-solving.
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2">
-        <Card className="shadow-lg">
+        <Card className="shadow-lg fade-in-up animation-delay-400">
           <CardHeader>
             <CardTitle className="font-headline">Technical Proficiency</CardTitle>
           </CardHeader>
@@ -63,6 +64,7 @@ export default function Skills() {
                   tickLine={false}
                   axisLine={false}
                   width={120}
+                  className="fade-in"
                 />
                  <Tooltip
                   cursor={{ fill: 'hsl(var(--muted))' }}
@@ -77,19 +79,20 @@ export default function Skills() {
                   fill="hsl(var(--primary))"
                   radius={[0, 4, 4, 0]}
                   background={{ fill: 'hsl(var(--muted))', radius: 4 }}
+                  className="fade-in"
                 />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
-        <Card className="shadow-lg">
+        <Card className="shadow-lg fade-in-up animation-delay-600">
           <CardHeader>
             <CardTitle className="font-headline">More Skills & Competencies</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              {otherSkills.map((skill) => (
-                <Badge key={skill} variant="outline" className="text-lg p-2 bg-background border-primary text-primary transition-all hover:bg-primary hover:text-primary-foreground cursor-pointer">
+              {otherSkills.map((skill, index) => (
+                <Badge key={skill} variant="outline" className="text-lg p-2 bg-background border-primary text-primary transition-all hover:bg-primary hover:text-primary-foreground cursor-pointer fade-in-up" style={{ animationDelay: `${50 * index}ms`}}>
                   {skill}
                 </Badge>
               ))}

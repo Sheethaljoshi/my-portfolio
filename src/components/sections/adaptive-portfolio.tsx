@@ -36,7 +36,7 @@ export default function AdaptivePortfolio() {
 
   return (
     <Container id="adaptive-portfolio">
-      <Card className="shadow-2xl border-primary/50 border-2">
+      <Card className="shadow-2xl border-primary/50 border-2 fade-in-up">
         <CardHeader className="text-center">
           <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-primary text-primary-foreground mb-4">
             <Bot className="h-6 w-6" />
@@ -66,7 +66,7 @@ export default function AdaptivePortfolio() {
           </form>
 
           {state.data && (
-            <Card className="mt-8">
+            <Card className="mt-8 fade-in">
               <CardHeader>
                 <CardTitle className="font-headline text-primary">
                   Your Tailored Portfolio

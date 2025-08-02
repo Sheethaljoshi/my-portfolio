@@ -19,22 +19,24 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <Container id="experience" className="bg-secondary">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary">
+    <Container id="experience" className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         Professional Experience
       </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg">
+      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         My journey through the tech landscape, one challenge at a time.
       </p>
       <div className="relative mt-12">
         <div
-          className="absolute left-1/2 top-0 -ml-[1px] h-full w-[2px] bg-border"
+          className="absolute left-1/2 top-0 -ml-[1px] h-full w-[2px] bg-border/40 fade-in"
           aria-hidden="true"
         />
         {experiences.map((exp, index) => (
           <div
             key={exp.role + exp.company}
-            className={`relative mb-8 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse`}
+            className={`relative mb-8 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse fade-in-up`}
+            style={{ animationDelay: `${200 * (index + 2)}ms`}}
           >
             <div className="hidden md:block md:w-5/12"></div>
             <div className="z-10 flex h-8 w-8 items-center justify-center">

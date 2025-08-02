@@ -13,14 +13,15 @@ const education = [
 
 export default function Education() {
   return (
-    <Container id="education" className="bg-secondary">
-      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary">
+    <Container id="education" className="relative overflow-hidden">
+       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
         My Education
       </h2>
-      <p className="mt-4 text-center text-muted-foreground md:text-lg">
+      <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         Foundations of my knowledge and expertise.
       </p>
-      <div className="mt-12 grid gap-8 md:grid-cols-1">
+      <div className="mt-12 grid gap-8 md:grid-cols-1 fade-in-up animation-delay-400">
         {education.map((edu) => (
           <Card key={edu.degree} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <CardHeader className="items-center">
