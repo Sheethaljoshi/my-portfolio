@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Download, ArrowRight } from 'lucide-react';
+import { Download, ArrowRight, Mouse } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -49,9 +49,9 @@ export default function Hero() {
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div className="h-12 w-6 animate-bounce rounded-full border-2 border-primary p-1">
-            <div className="h-4 w-4 rounded-full bg-primary"></div>
-        </div>
+        <a href="#experience" aria-label="Scroll down">
+          <Mouse className="h-8 w-8 animate-bounce text-primary" />
+        </a>
       </div>
     </section>
   );
