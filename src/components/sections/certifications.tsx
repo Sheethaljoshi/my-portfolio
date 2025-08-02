@@ -7,11 +7,13 @@ const certifications = [
     icon: <Award className="h-8 w-8 text-primary" />,
     title: 'IBM Full Stack Developer Professional Certification',
     description: 'Issued by IBM',
+    url: 'https://drive.google.com/drive/folders/1xWROUPyNRbVLBAtv7RooqaX7qpA6kpdC?usp=sharing'
   },
   {
     icon: <Award className="h-8 w-8 text-primary" />,
     title: 'ERC Space and Robotics Industry Standard Programme Certification',
     description: 'Issued by European Space Foundation',
+    url: 'https://drive.google.com/drive/folders/1xWROUPyNRbVLBAtv7RooqaX7qpA6kpdC?usp=sharing'
   },
 ];
 
@@ -26,13 +28,15 @@ export default function Certifications() {
       </p>
       <div className="mt-12 grid gap-8 md:grid-cols-2">
         {certifications.map((item, index) => (
-          <Card key={item.title} className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary fade-in-up" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
-            <div className="flex-shrink-0">{item.icon}</div>
-            <div>
-              <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
-              <CardDescription className="mt-1">{item.description}</CardDescription>
-            </div>
-          </Card>
+          <a href={item.url} target="_blank" rel="noopener noreferrer" key={item.title} className="block h-full">
+            <Card className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary fade-in-up h-full" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
+              <div className="flex-shrink-0">{item.icon}</div>
+              <div>
+                <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
+                <CardDescription className="mt-1">{item.description}</CardDescription>
+              </div>
+            </Card>
+          </a>
         ))}
       </div>
     </Container>
