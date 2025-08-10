@@ -10,8 +10,11 @@ const achievements = [
     title: 'European Rover Challenge 2024',
     description: 'Achieved World Rank 18, All India Rank 1 as the Lead of Navigation and Communications.',
     images: [
-      { src: 'https://placehold.co/600x400.png', alt: 'Rover Challenge Image 1', hint: 'robotics competition' },
-      { src: 'https://placehold.co/600x400.png', alt: 'Rover Challenge Image 2', hint: 'mars rover' },
+      { src: '/rover1.jpeg', alt: 'Rover Challenge Image 1', hint: 'robotics competition' },
+      { src: '/rover2.jpeg', alt: 'Rover Challenge Image 2', hint: 'mars rover' },
+      { src: '/rover3.jpeg', alt: 'Rover Challenge Image 3', hint: 'space exploration' },
+      { src: '/rover4.jpeg', alt: 'Rover Challenge Image 4', hint: 'robotics competition' },
+      { src: '/rover5.jpeg', alt: 'Rover Challenge Image 5', hint: 'mars rover' }
     ]
   },
   {
@@ -19,8 +22,11 @@ const achievements = [
     title: 'HackMIT 2024 Semi-Finalist',
     description: 'Recognized as a semi-finalist in the world-famous hackathon at the Massachusetts Institute of Technology, USA.',
     images: [
-      { src: 'https://placehold.co/600x400.png', alt: 'HackMIT Image 1', hint: 'hackathon event' },
-      { src: 'https://placehold.co/600x400.png', alt: 'HackMIT Image 2', hint: 'coding students' },
+      { src: '/hackmit1.jpeg', alt: 'HackMIT Image 1', hint: 'hackathon event' },
+      { src: '/hackmit2.jpeg', alt: 'HackMIT Image 2', hint: 'coding students' },
+      { src: '/hackmit3.jpeg', alt: 'HackMIT Image 3', hint: 'team collaboration' },
+      { src: '/hackit4.jpeg', alt: 'HackMIT Image 4', hint: 'innovation showcase' },
+      { src: '/hackmit5.jpeg', alt: 'HackMIT Image 5', hint: 'final presentation' }
     ]
   },
   {
@@ -28,8 +34,9 @@ const achievements = [
     title: 'Top 5 at TinkHack 2.0',
     description: "Secured a top 5 position in Kerala's Largest Gen AI Hackathon.",
     images: [
-      { src: 'https://placehold.co/600x400.png', alt: 'TinkHack Image 1', hint: 'ai hackathon' },
-      { src: 'https://placehold.co/600x400.png', alt: 'TinkHack Image 2', hint: 'team presentation' },
+      { src: '/tink1.jpeg', alt: 'TinkHack Image 1', hint: 'ai hackathon' },
+      { src: '/tink2.jpeg', alt: 'TinkHack Image 2', hint: 'teamwork in tech' },
+      { src: '/tink3.jpeg', alt: 'TinkHack Image 3', hint: 'innovation in ai' }
     ]
   },
 ];
@@ -53,14 +60,15 @@ export default function Achievements() {
                 <CarouselContent>
                   {item.images.map((image, imgIndex) => (
                     <CarouselItem key={imgIndex}>
-                      <Image 
-                        src={image.src} 
-                        alt={image.alt} 
-                        width={600} 
-                        height={400} 
-                        className="rounded-lg object-cover"
-                        data-ai-hint={image.hint}
-                      />
+                      <div className="relative w-full h-96 overflow-hidden rounded-lg">
+                        <Image 
+                          src={image.src} 
+                          alt={image.alt} 
+                          fill
+                          className="object-cover"
+                          data-ai-hint={image.hint}
+                        />
+                      </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
