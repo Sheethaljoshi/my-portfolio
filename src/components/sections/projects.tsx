@@ -86,7 +86,7 @@ export default function Projects() {
             <CardFooter className="mt-auto p-6">
               <Button asChild className="w-full">
                 <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" /> View on GitHub
+                  <Github className="mr-2 h-4 w-4" /> View source code on github
                 </a>
               </Button>
             </CardFooter>
