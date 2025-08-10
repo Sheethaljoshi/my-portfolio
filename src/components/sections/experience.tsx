@@ -54,7 +54,7 @@ const experiences = [
 ];
 
 const TimelineIcon = ({ index }: { index: number }) => (
-  <div className="relative">
+  <div className="relative hidden md:block">
     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-purple-600 shadow-lg ring-4 ring-white dark:ring-gray-900 transition-all duration-300 hover:scale-110">
       <Briefcase className="h-6 w-6 text-white" />
     </div>
@@ -104,18 +104,18 @@ export default function Experience() {
 
           {/* Timeline */}
           <div className="relative max-w-6xl mx-auto">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-purple-500 to-indigo-600 opacity-30" />
+            {/* Timeline line - hidden on mobile */}
+            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-purple-500 to-indigo-600 opacity-30 hidden md:block" />
             
             {experiences.map((exp, index) => (
               <div
                 key={exp.role + exp.company}
-                className={`relative mb-16 group ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} flex items-center`}
+                className={`relative mb-16 group flex flex-col md:flex-row md:items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                {/* Timeline icon */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
+                {/* Timeline icon - hidden on mobile */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 z-20 hidden md:block">
                   <TimelineIcon index={index} />
                 </div>
 
@@ -129,7 +129,7 @@ export default function Experience() {
                     }
                     bg-card border-border/50 backdrop-blur-sm border-2
                   `}>
-                    {/* Card without overlay */}
+                    {/* Card overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-pink-800 to-purple-800 opacity-30" />
 
                     <CardHeader className="relative z-10 p-8">

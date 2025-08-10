@@ -7,8 +7,8 @@ import Image from 'next/image';
 const achievements = [
   {
     icon: <Trophy className="h-8 w-8 text-primary" />,
-    title: 'European Rover Challenge 2024',
-    description: 'Achieved World Rank 18, All India Rank 1 as the Lead of Navigation and Communications.',
+    title: 'World Rank 18 - European Rover Challenge 2024 ',
+    description: 'Engineered and led the Navigation and Communications systems of the rover, driving the team’s success in Kraków, Poland',
     images: [
       { src: '/rover1.jpeg', alt: 'Rover Challenge Image 1', hint: 'robotics competition' },
       { src: '/rover2.jpeg', alt: 'Rover Challenge Image 2', hint: 'mars rover' },
@@ -19,7 +19,7 @@ const achievements = [
   },
   {
     icon: <Award className="h-8 w-8 text-primary" />,
-    title: 'HackMIT 2024 Semi-Finalist',
+    title: 'Semi-Finalist - HackMIT 2024',
     description: 'Recognized as a semi-finalist in the world-famous hackathon at the Massachusetts Institute of Technology, USA.',
     images: [
       { src: '/hackmit1.jpeg', alt: 'HackMIT Image 1', hint: 'hackathon event' },
@@ -31,8 +31,8 @@ const achievements = [
   },
   {
     icon: <Users className="h-8 w-8 text-primary" />,
-    title: 'Top 5 at TinkHack 2.0',
-    description: "Secured a top 5 position in Kerala's Largest Gen AI Hackathon.",
+    title: 'Top 5 at TinkHack 2.0 (2025)',
+    description: "Secured a top 5 position in one of South India's Largest Gen AI Hackathons.",
     images: [
       { src: '/tink1.jpeg', alt: 'TinkHack Image 1', hint: 'ai hackathon' },
       { src: '/tink2.jpeg', alt: 'TinkHack Image 2', hint: 'teamwork in tech' },
