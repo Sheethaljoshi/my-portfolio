@@ -9,8 +9,9 @@ const experiences = [
     company: 'KDex Global (On-site)',
     period: 'May 2025 - July 2025',
     description: [
-      'Built and maintained key backend APIs in Golang, optimized PostgreSQL queries, and streamlined data processing pipelines.',
-      'Led the build and static hosting of product documentation using React, Docusaurus, AWS S3, and CloudFront.'
+      'Engineered and optimized backend APIs in Golang and PostgreSQL, improving backend throughput by 25%.',
+      'Directed the development and deployment of product documentation for the company’s flagship product using React, Docusaurus, AWS S3, and CloudFront, enabling scalable self-serve support.',
+      'Partnered with cross-functional teams (frontend, DevOps, and product) to design scalable backend architectures, reducing service deployment time by 15%.'
     ],
   },
   {
@@ -18,8 +19,9 @@ const experiences = [
     company: 'Global Health Opinion (Remote)',
     period: 'March 2025 - May 2025',
     description: [
-      'Built scalable, interactive medical dashboards in Next.js with TypeScript and C# REST APIs.',
-      'Improved data load speeds by 20% through API optimization and frontend rendering improvements.'
+      'Engineered scalable medical dashboards utilizing Next.js and TypeScript for real-time operational insights, integrating REST APIs; dashboards now used by 20+ doctors.',
+      'Enhanced data load speeds by 20% via API optimization and frontend rendering improvements.',
+      'Collaborated with a distributed team of engineers and healthcare specialists to define dashboard requirements and validate features, reducing post-deployment revisions by 15%.'
     ],
   },
 ];
