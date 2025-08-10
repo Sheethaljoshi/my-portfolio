@@ -18,7 +18,7 @@ const projects = [
       "Designed and developed a React.js + TypeScript front-end and FastAPI + Python backend with structured triage logic, achieving 90%+ alignment with expert-defined outcomes.",
       "Earned Semi-finalist recognition at HackMIT 2024, MIT’s flagship global hackathon, for innovation and technical excellence."
     ],
-    image: 'https://placehold.co/600x400.png',
+    image: '/aida.png',
     image_hint: 'medical technology',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
@@ -29,7 +29,7 @@ const projects = [
       'Produced 50+ multimedia study aids during hackathon testing, dynamically adapting learning paths based on cognitive preference detection.',
       'Integrated DALL·E for custom visuals and GPT-4 for adaptive storytelling, reduced content generation time by ~3x compared to initial prototype.',
     ],
-    image: 'https://placehold.co/600x400.png',
+    image: '/content.jpeg',
     image_hint: 'education technology',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
@@ -40,7 +40,7 @@ const projects = [
       'Developed and tested a real-time autonomous navigation system with graph search algorithms and AI-based terrain classification, completing 200+ simulation runs with 95%+ waypoint accuracy across 5+ terrain types.',
       'Implemented live telemetry and video streaming using WebSockets and WebRTC, maintaining <300ms latency during field testing.',
     ],
-    image: 'https://placehold.co/600x400.png',
+    image: '/path.png',
     image_hint: 'abstract code',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
@@ -64,8 +64,8 @@ export default function Projects() {
                <Image
                   src={project.image}
                   alt={project.title}
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={600}
                   className="w-full h-auto object-cover"
                   data-ai-hint={project.image_hint}
                 />

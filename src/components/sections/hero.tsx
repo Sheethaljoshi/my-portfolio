@@ -26,7 +26,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Button size="lg" asChild>
-                <a href="/sheethal-resume.pdf" download>
+                <a href="./SHEETHAL_JOSHI_SDE.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
@@ -42,9 +42,9 @@ export default function Hero() {
           <div className="hidden md:flex items-center justify-center relative h-[28rem] w-[28rem]">
             <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/50 orbit" />
             <div className="absolute inset-12 rounded-full border-2 border-dashed border-primary/30 orbit-reverse" />
-            <div className="relative h-80 w-80">
+            <div className="relative h-96 w-96">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="/sheethal.png"
                 alt="Sheethal Joshi Thomas"
                 layout="fill"
                 objectFit="cover"
