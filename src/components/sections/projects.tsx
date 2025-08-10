@@ -14,19 +14,20 @@ const projects = [
   {
     title: 'AI Diagnostic Assistant',
     description: [
-      "Built an AI-powered assistant with OpenAI's Realtime API, Hume.ai, and GPT-4 for emotionally adaptive conversational responses.",
-      "Selected as a semi-finalist at MIT’s flagship global hackathon.",
+      "Built an AI-driven medical assistant using OpenAI Realtime API, Hume.ai, and GPT-4, enabling conversational symptom reporting with emotionally adaptive responses; processed 100+ simulated cases during testing.",
+      "Designed and developed a React.js + TypeScript front-end and FastAPI + Python backend with structured triage logic, achieving 90%+ alignment with expert-defined outcomes.",
+      "Earned Semi-finalist recognition at HackMIT 2024, MIT’s flagship global hackathon, for innovation and technical excellence."
     ],
     image: 'https://placehold.co/600x400.png',
     image_hint: 'medical technology',
     githubUrl: 'https://github.com/Sheethaljoshi',
   },
   {
-    title: 'AI Study Buddy',
+    title: 'AI Study Content Creator',
     description: [
-      'Developed an AI tool that converts user content into dynamic study aids like flashcards and quizzes.',
-      'Utilized behavioral analytics and NLP to detect cognitive preferences for personalized learning.',
-      'Ranked Top 5 at Kerala’s largest GenAI hackathon for innovation.',
+      'Created an AI learning companion that transforms content into interactive comic books, quirky podcasts, gamified concept maps, and other study formats, using behavioral analytics and NLP profiling; supported 5+ learning formats.',
+      'Produced 50+ multimedia study aids during hackathon testing, dynamically adapting learning paths based on cognitive preference detection.',
+      'Integrated DALL·E for custom visuals and GPT-4 for adaptive storytelling, reduced content generation time by ~3x compared to initial prototype.',
     ],
     image: 'https://placehold.co/600x400.png',
     image_hint: 'education technology',
@@ -35,8 +36,9 @@ const projects = [
   {
     title: 'Rover Waypoint Controller',
     description: [
-      'Designed a real-time autonomous navigation system using graph search and AI-based terrain classification.',
-      'Contributed to Horizon Mars Rover Team achieving World Rank 18 at ERC 2024.',
+      'Led a 6-member navigation and communications team in building and integrating the rover’s autonomous navigation module for the European Rover Challenge 2024 in Krakow, Poland.',
+      'Developed and tested a real-time autonomous navigation system with graph search algorithms and AI-based terrain classification, completing 200+ simulation runs with 95%+ waypoint accuracy across 5+ terrain types.',
+      'Implemented live telemetry and video streaming using WebSockets and WebRTC, maintaining <300ms latency during field testing.',
     ],
     image: 'https://placehold.co/600x400.png',
     image_hint: 'abstract code',
@@ -50,7 +52,7 @@ export default function Projects() {
       <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full border-2 border-dashed border-primary/20 orbit" />
       <div className="absolute -right-32 -bottom-48 h-96 w-96 rounded-full border-2 border-dashed border-primary/20 orbit-reverse" />
       <h2 className="text-3xl font-bold text-center font-headline sm:text-4xl text-primary fade-in-up">
-        My Projects
+        Notable Projects
       </h2>
       <p className="mt-4 text-center text-muted-foreground md:text-lg fade-in-up animation-delay-200">
         Here are some of the things I've built with passion and code.
